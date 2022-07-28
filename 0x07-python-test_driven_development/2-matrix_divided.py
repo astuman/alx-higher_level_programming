@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 #2-matrix_devided.py
 """"Defining matrix_divided"""
+
+
 def matrix_divided(matrix, div):
     """Divide all elements of a matrix.
 
