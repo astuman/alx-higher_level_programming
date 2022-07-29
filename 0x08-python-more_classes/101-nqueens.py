@@ -2,6 +2,7 @@
 # 101-nqueens.py
 """Solves the N-queens puzzle.
 
+
 Determines all possible solutions to placing N
 N non-attacking queens on an NxN chessboard.
 
@@ -23,6 +24,8 @@ import sys
 
 def init_board(n):
     """Initialize an `n`x`n` sized chessboard with 0's."""
+
+
     board = []
     [board.append([]) for i in range(n)]
     [row.append(' ') for i in range(n) for row in board]
@@ -141,4 +144,3 @@ if __name__ == "__main__":
     solutions = recursive_solve(board, 0, 0, [])
     for sol in solutions:
         print(sol)
-
