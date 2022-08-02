@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 # 2-append_write.py
 """Defining a function that appends a string"""
+
+
 def append_write(filename="", text=""):
     """Writing a string to a file
     Args:
