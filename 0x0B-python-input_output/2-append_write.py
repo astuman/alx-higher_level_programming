@@ -4,14 +4,13 @@
 
 
 def append_write(filename="", text=""):
-    """Writing a string to a file
+    """Appends a string to the end of a UTF8 text file.
+
     Args:
-       filename (str):
-             a string to writing on
-       text (str):
-             a string tfo write on the filename
-       Return:
-             returns the appended
-             """
+        filename (str): The name of the file to append to.
+        text (str): The string to append to the file.
+    Returns:
+        The number of characters appended.
+    """
     with open(filename, "a", unicoding="utf-8") as f:
         return f.write(text)
