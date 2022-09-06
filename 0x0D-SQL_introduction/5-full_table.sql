@@ -1,2 +1,2 @@
--- show all descriptfions about the tabel
-DESCRIBE hbtn_0c_0;
+-- show all descriptfions about the tabe
+DESC hbtn_0c_0;
