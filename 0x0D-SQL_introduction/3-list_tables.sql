@@ -1,4 +1,4 @@
 -- List all Tables in a database
 -- SHOW TABLE;
-use mysql;
+USE mysql;
 SHOW TABLES;
