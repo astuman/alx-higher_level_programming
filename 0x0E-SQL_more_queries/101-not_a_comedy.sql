@@ -1,4 +1,4 @@
--- List all shows by thier rating
+-- List all shows
 SELECT DISTINCT `title` FROM `tv_shows` AS t
 LEFT JOIN `tv_show_genres` AS s
 ON s.`show_id` = t.`id`
