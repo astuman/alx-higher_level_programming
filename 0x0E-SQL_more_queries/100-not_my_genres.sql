@@ -1,3 +1,4 @@
+-- List all genres not linked to shows
 SELECT DISTINCT `name`
   FROM `tv_genres` AS g
 INNER JOIN `tv_show_genres` AS s
