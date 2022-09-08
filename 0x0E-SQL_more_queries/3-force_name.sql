@@ -1,2 +1,3 @@
 -- Create table force_name
-CREATE TABLE IF NOT EXISTS `force_name` (`ID` INT, `name` VARCHAR(256) NOT NULL);
+use mysql;
+CREATE TABLE IF NOT EXISTS `force_name` (`id` INT, `name` VARCHAR(256) NOT NULL);
