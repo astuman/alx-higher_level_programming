@@ -1,3 +1,4 @@
-#!/user/bin/node
-//print three lines
-console.log('C is fun\nPython is cool\nJavaScript is amazing');
+#!/usr/bin/node
+// It prints 3 lines
+
+console.log('C is fun\nPython is cool\nJavascript is amazing');
