@@ -1,7 +1,8 @@
 #!/usr/bin/node
-// prints C is fun 'x' times
+// prints 3 lines but by using loop
 
 const lang = 'C is fun';
+
 if (isNaN(process.argv[2])) {
   console.log('Missing number of occurrences');
 } else {
