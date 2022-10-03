@@ -1,5 +1,6 @@
 #!/usr/bin/node
 // prints C is fun 'x' times
+
 const lang = 'C is fun';
 const x = process.argv[2];
 if (isNaN(x)) {
