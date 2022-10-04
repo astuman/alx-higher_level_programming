@@ -1,7 +1,11 @@
 #!/user/bin/node
 // print addition of two integers
 
+
+let a = parseInt(process.argv[2]);
+let b = parseInt(process.argv[3]);
+
 function add (a, b) {
-  return parseInt(a) + parseInt(b);
+	return a + b;
 }
-console.log(add(process.argv[2], process.argv[3]));
+console.log(add(a, b))
