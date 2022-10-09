@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 lists all State objects from a database
 """
