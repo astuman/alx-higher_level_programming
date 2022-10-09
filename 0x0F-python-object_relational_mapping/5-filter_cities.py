@@ -15,7 +15,6 @@ if __name__ == "__main__":
     LIKE %s ORDEDR BY \
     cities.id", (argv[4]),)
     rows = mycursor.fetchall()
-    for row in rows:
-        print(row)
+    print(", ".join(city[0] for city in rows))
     mycursor.close()
     db.close()
