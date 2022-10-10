@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 
 """
+print first state
 """
 
-import SQLAlchemy
+import sqlalchemy
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
