@@ -1,16 +1,4 @@
 #!/usr/bin/python3
-
-"""
-print first state
-"""
-
-import sqlalchemy
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-from sys import argv
-from model_state import Base, State
-
-#!/usr/bin/python3
 """
 list all State objects that contain the letter a from a database
 """
