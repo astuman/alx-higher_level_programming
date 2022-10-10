@@ -19,7 +19,7 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=eng)
     session = Session()
     s = '%a%'
-    states = session.query(State).filter(State.name.like(s)).order_by(State.id)
-    for state in states:
+    st = session.query(State).filter(State.name.like(s)).order_by(State.id)
+    for state in st:
         print("{}: {}".format(state.id, state.name))
     session.close()
