@@ -20,8 +20,6 @@ if __name__ == "__main__":
     session = Session()
     s = '%a%'
     st = session.query(State).filter(State.name.like(s)).order_by(State.id).first()
-    if st is not None:
+    for states in st:
         print("{}: {}".format(st.id, st.name))
-    else:
-        print("Nothing")
     session.close()
