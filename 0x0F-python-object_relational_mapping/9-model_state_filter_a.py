@@ -19,10 +19,9 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=eng)
     session = Session()
     s = '%a%'
-    first_state = session.query(State).filter(State.name.like(s)). \
-        order_by(State.id).first()
-    if first_state is not None:
-        print("{}: {}".format(first_state.id, first_state.name))
+    st = session.query(State).filter(State.name.like(s)).order_by(State.id).first()
+    if st is not None:
+        print("{}: {}".format(st.id, st.name))
     else:
         print("Nothing")
     session.close()
