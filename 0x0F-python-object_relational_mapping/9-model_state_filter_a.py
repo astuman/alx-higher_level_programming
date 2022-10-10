@@ -18,10 +18,10 @@ if __name__ == "__main__":
     Base.metadata.create_all(eng)
     Session = sessionmaker(bind=eng)
     session = Session()
-    a = '%a%'
-    first_state = session.query(State).filter(State.name.like(a)).order_by(State.id).first()
+    first_state = session.query(State).order_by(State.id).first()
     if first_state is not None:
         print("{}: {}".format(first_state.id, first_state.name))
     else:
         print("Nothing")
     session.close()
+
