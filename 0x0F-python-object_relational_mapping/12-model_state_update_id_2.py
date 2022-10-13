@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-adds the State object Louisiana to a database
+changes the name of the State object where id=2 to New Mexico from a database
 """
 
 import sqlalchemy
@@ -18,9 +18,7 @@ if __name__ == "__main__":
     Base.metadata.create_all(eng)
     Session = sessionmaker(bind=eng)
     session = Session()
-    new_state = State(name='Louisiana')
-    session.add(new_state)
-    state = session.query(State).filter_by(name='Louisiana').first()
-    print(str(state.id))
+    state = session.query(State).filter_by(id=2).first()
+    state.name = "New Mexico"
     session.commit()
     session.close()
