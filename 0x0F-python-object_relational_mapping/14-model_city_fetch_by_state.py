@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 prints all City objects from a database
 """
@@ -23,4 +24,3 @@ if __name__ == "__main__":
     for city, state in rows:
         print("{}: ({}) {}".format(state.name, city.id, city.name))
     session.close()
-
