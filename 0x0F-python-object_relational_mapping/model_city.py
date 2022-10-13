@@ -1,17 +1,16 @@
 #!/usr/bin/python3
 """
-create model_city.py
+contains the class City
 """
 
 import sqlalchemy
-from sqlalchemy import column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey
 from model_state import Base, State
 
-class city(Base):
 
-    """defining city class"""
-
+class City(Base):
+    """Representation of a city"""
     __tablename__ = "cities"
-    id = column(Integer, primary_key=True)
-    name = column(String(128), nullable=False)
-    state_id = column(Integer, ForeignKey('states.id'))
+    id = Column(Integer, primary_key=True)
+    name = Column(String(128), nullable=False)
+    state_id = Column(Integer, ForeignKey('states.id'))
