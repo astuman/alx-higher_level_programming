@@ -9,7 +9,7 @@ def find_peak(list_of_integers):
     if l1 == 0:
         return
     p = l1 // 2
-    if (p == l1 - 1 or li[p] >= li[p + 1] and p == 0 or li[p] >= li[p - 1]):
+    if (p == l1 - 1 or li[p] >= li[p + 1]) and (p == 0 or li[p] >= li[p - 1]):
         return li[p]
     if p != l1 - 1 and li[p + 1] > li[p]:
         return find_peak(li[p + 1:])
