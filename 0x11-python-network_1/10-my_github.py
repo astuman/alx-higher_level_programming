@@ -10,4 +10,4 @@ if __name__ == '__main__':
     from sys import argv
     r = requests.get('https://github.com/users/{}'.format(argv[1]),
                      auth=HTTPBasicAuth(argv[1], argv[2]))
-    print(r.json().get(id))
+    print(r.json().get('id'))
