@@ -7,6 +7,6 @@ $(function () {
     }
   
     getSalut().then((res) => {
-        $('div#hello').text(res.hello);
+        $('#hello').text(res.hellooo);
     });
   });
